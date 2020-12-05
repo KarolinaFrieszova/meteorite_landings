@@ -1,0 +1,32 @@
+{
+    "id": "F92E17AC",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1607171545499.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "meteorites",
+        "caption": "meteorites",
+        "totalObservations": 4823,
+        "displayedObservations": 4823,
+        "variables": 7,
+        "cacheKey": "A93AB961",
+        "object": "meteorites",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=meteorites&cache_key=A93AB961&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1152921504606846994,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607171545499,
+    "read_only": false,
+    "read_only_alternatives": []
+}

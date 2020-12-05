@@ -1,0 +1,32 @@
+{
+    "id": "918B6646",
+    "path": null,
+    "project_path": null,
+    "type": "r_dataframe",
+    "hash": "0",
+    "contents": "",
+    "dirty": false,
+    "created": 1607171205959.0,
+    "source_on_save": false,
+    "relative_order": 4,
+    "properties": {
+        "expression": "meteorites_landing",
+        "caption": "meteorites_landing",
+        "totalObservations": 45716,
+        "displayedObservations": 45716,
+        "variables": 6,
+        "cacheKey": "F3C0B17F",
+        "object": "meteorites_landing",
+        "environment": "",
+        "contentUrl": "grid_resource/gridviewer.html?env=&obj=meteorites_landing&cache_key=F3C0B17F&max_cols=50",
+        "preview": 0
+    },
+    "folds": "",
+    "lastKnownWriteTime": -2999736106086080610,
+    "encoding": "",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1607171205959,
+    "read_only": false,
+    "read_only_alternatives": []
+}
