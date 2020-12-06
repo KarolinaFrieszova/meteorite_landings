@@ -8,8 +8,8 @@ R project with two pieces of code:
 
 # The dataset contains following variables
 - id: a unique identifier for the meteorite
-- name: 
-- mass: the mass of the meteorite in grams
+- name: the meteorite's name
+- mass_g: the mass of the meteorite in grams
 - fall: fell - for meteorite that has been seen falling
         found - meteorite's fall was not observed 
 - year: the year the meteorite fell, or the year it was found (depending on the value of fell)
