@@ -1,5 +1,5 @@
 # Meteorite landings
-Cleaning and analysing data from NASA on meteorites that have been found up to the year 2013
+Collected data on meteorites that have fallen to Earth and been found up to the year 2013
 
 # Stracture of project
 R project with two pieces of code:
