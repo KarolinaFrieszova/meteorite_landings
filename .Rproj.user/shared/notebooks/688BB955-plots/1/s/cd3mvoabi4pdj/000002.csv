@@ -1,5 +1,0 @@
-"0","meteorites %>% "
-"0","  group_by(fall) %>% "
-"0","  summarise(average_mass = mean(mass_g))"
-"2","`summarise()` ungrouping output (override with `.groups` argument)
-"

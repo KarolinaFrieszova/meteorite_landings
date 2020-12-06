@@ -25,6 +25,3 @@ stopifnot(names(meteorites) %in%
             c("id", "name", "mass_g", "year", "fall", "latitude", "longitude"))
 
 write_csv(meteorites, "clean_data/meteorites.csv")
-
-meteorites %>% 
-  summarise(across(.fns = ~sum(is.na(.x))))
