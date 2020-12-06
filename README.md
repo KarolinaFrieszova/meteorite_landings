@@ -30,3 +30,4 @@ R project with two pieces of code:
 - finds names and years of ten largest meteorites found
 - finds the average mass of meteorites that were recorded falling, vs. those which were just found
 - finds the number of meteorites in each year, for every year since 2000
+- compares the number and the average mass of meteorites that were found vs. once that were seen falling
