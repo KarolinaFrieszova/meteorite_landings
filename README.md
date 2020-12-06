@@ -6,6 +6,16 @@ R project with two pieces of code:
 1. A clean_data.R file that cleans some data on meteorites.
 2. A plots.Rmd file that takes the cleaned data and performs some analysis.
 
+# The dataset contains following variables
+- id: a unique identifier for the meteorite
+- name: 
+- mass: the mass of the meteorite in grams
+- fall: fell - for meteorite that has been seen falling
+        found - meteorite's fall was not observed 
+- year: the year the meteorite fell, or the year it was found (depending on the value of fell)
+- latitude: the latitude of the meteorite's landing
+- longitude: the longitude of the meteorite's landing
+
 # The clean_data.R file
 - reads data and changes the names of variables to follow naming standards
 - splits column into 'GeoLocation' latitude and longitude, changes type to numeric
