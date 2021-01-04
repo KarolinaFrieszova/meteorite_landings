@@ -28,10 +28,8 @@ R project with two pieces of code:
 # The plots.Rmd file
 - reads clean data in
 - finds names and years of ten largest meteorites found
-<<<<<<< HEAD
 - finds the average mass and the total number of meteorites that were recorded falling, vs. those which were just found
 - finds the number of meteorites in each year, for every year since 2000
-=======
 - finds the average mass of meteorites that were recorded falling, vs. those which were just found
 - finds the number of meteorites in each year, for every year since 2000
 - compares the total number and the average mass of meteorites that were found vs. which were seen falling
