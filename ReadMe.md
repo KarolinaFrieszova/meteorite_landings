@@ -1,7 +1,3 @@
----
-title: "Documentation"
-output: html_document
----
 # Meteorite landings
 Collected data on meteorites that have fallen to Earth and been found up to the year 2013
 
@@ -39,4 +35,3 @@ R project with two pieces of code:
 - finds the average mass of meteorites that were recorded falling, vs. those which were just found
 - finds the number of meteorites in each year, for every year since 2000
 - compares the total number and the average mass of meteorites that were found vs. which were seen falling
->>>>>>> a51f54d83d97507fb8f7bb09f9b40d75a6d5b1c0
