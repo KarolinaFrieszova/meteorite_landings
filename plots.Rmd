@@ -7,21 +7,35 @@ output: html_notebook
 meteorites <- read_csv("clean_data/meteorites.csv")
 ```
 
+1. The names and years found for the 10 largest meteorites in the data.
+
 ```{r}
 meteorites %>% 
   arrange(desc(mass_g)) %>% 
   drop_na() %>% 
   filter(fall == "Found") %>% 
-  select(name, year) %>% 
+  select(name, year, mass_g) %>% 
   head(10)
   
 ```
+Alternative way
+```{r}
+meteorites %>% 
+  filter(fall == "Found") %>% 
+  drop_na() %>% 
+  slice_max(mass_g, n = 10) %>% 
+  select(name, year, mass_g)
+```
+2. The average mass of meteorites that were recorded falling, vs. those which were just found.
 
 ```{r}
 meteorites %>% 
   group_by(fall) %>% 
-  summarise(average_mass = mean(mass_g))
+  summarise(average_mass = mean(mass_g),
+            count = n())
 ```
+
+3. The number of meteorites in each year, for every year since 2000.
 
 ```{r}
 meteorites %>% 
@@ -30,10 +44,5 @@ meteorites %>%
   summarise(number_of_meteorites = n())
 ```
 
-```{r}
-meteorites %>% 
-  group_by(fall) %>% 
-  summarise(count = n(),
-            avg_mass = mean(mass_g))
-```
+
 
