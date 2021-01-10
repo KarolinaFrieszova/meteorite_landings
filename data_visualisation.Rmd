@@ -1,0 +1,53 @@
+---
+title: "Data Visualisation"
+output: html_notebook
+---
+
+```{r}
+library(tidyverse)
+library(viridis)
+```
+
+```{r}
+meteorites %>% 
+  mutate(mass_g = mass_g/1000000) %>% 
+ggplot()+
+  aes(x = longitude, y = latitude, fill = fall, size = mass_g)+
+  geom_point(alpha = 0.7, shape = 21, colour = "black")+
+  scale_size(range = c(2, 12), name = "Mass (tons)")+
+  labs(fill = "Observed",
+       title = "Meteorites by mass",
+       subtitle = "Observed Falling vs Found\n",
+       x = "Latitude",
+       y = "Longitude")+
+  theme_classic()
+```
+
+```{r}
+meteorites %>% 
+  mutate(mass_g = mass_g/1000000) %>% 
+ggplot()+
+  aes(x = longitude, y = latitude, fill = mass_g, size = mass_g)+
+  geom_point(alpha = 0.7, shape = 21, colour = "black")+
+  scale_size(range = c(2, 12), name = "Mass (tons)")+
+  scale_fill_gradient(low = "#e5f5f9", high = "#2ca25f")+
+  labs(fill = "Mass (tons)")+
+  guides(size = F)+
+  theme_void() + # theme_classic()
+  #theme(legend.position = "bottom") +
+  ylab("Longitude") +
+  xlab("Latitude") #+
+  #theme(legend.position = "none")
+```
+
+```{r}
+ggplot(meteorites)+
+  aes(x = year, fill = fall)+
+  geom_histogram(position = "dodge", binwidth = 100)+
+  theme_bw()+
+  labs(fill = "Observed",
+       x = "\nYear",
+       y = "Count\n",
+       title = "Number of meteorites fallen on Earth by year of discovery\n")
+```
+

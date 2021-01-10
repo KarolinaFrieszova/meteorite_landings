@@ -17,19 +17,19 @@ R project with two pieces of code:
 - longitude: the longitude of the meteorite's landing
 
 # The clean_data.R file
-- reads data and changes the names of variables to follow naming standards
-- splits column into 'GeoLocation' latitude and longitude, changes type to numeric
-- replaces any missing values in latitude and longitude with zeros
-- removes meteorites less than 1000g in weight from the data
-- orders the data by the year of discovery
+- read data and change the names of variables to follow naming standards
+- split column into 'GeoLocation' latitude and longitude, change type to numeric
+- replace any missing values in latitude and longitude with zeros
+- remove meteorites less than 1000g in weight from the data
+- order the data by the year of discovery
 - assertive programming included to ensure that names of variables as we expect & latitude and longitude observations have valid values
-- saves cleaned data into clean_data folder
+- save cleaned data into clean_data folder
 
 # The plots.Rmd file
-- reads clean data in
-- finds names and years of ten largest meteorites found
-- finds the average mass and the total number of meteorites that were recorded falling, vs. those which were just found
-- finds the number of meteorites in each year, for every year since 2000
-- finds the average mass of meteorites that were recorded falling, vs. those which were just found
-- finds the number of meteorites in each year, for every year since 2000
-- compares the total number and the average mass of meteorites that were found vs. which were seen falling
+- read clean data in
+- find names and years of ten largest meteorites found
+- find the average mass and the total number of meteorites that were recorded falling, vs. those which were just found
+- find the number of meteorites in each year, for every year since 2000
+- find the average mass of meteorites that were recorded falling, vs. those which were just found
+- find the number of meteorites in each year, for every year since 2000
+- compare the total number and the average mass of meteorites that were found vs. which were seen falling
