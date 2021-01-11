@@ -2,9 +2,13 @@
 title: "R Notebook"
 output: html_notebook
 ---
+```{r}
+library(here)
+library(tidyverse)
+```
 
 ```{r}
-meteorites <- read_csv("clean_data/meteorites.csv")
+meteorites <- read_csv(here("data/clean_data/meteorites.csv"))
 ```
 
 1. The names and years found for the 10 largest meteorites in the data.

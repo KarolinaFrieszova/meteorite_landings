@@ -4,7 +4,7 @@ library(assertr)
 
 # Read in data 
 
-meteorite_landings <- read_csv("raw_data/meteorite_landings.csv")
+meteorite_landings <- read_csv("data/raw_data/meteorite_landings.csv")
 
 # Clean Data
 
@@ -35,4 +35,4 @@ stopifnot(names(meteorites) %in%
 
 # Save clean dataset
 
-write_csv(meteorites, "clean_data/meteorites.csv")
+write_csv(meteorites, "data/clean_data/meteorites.csv")

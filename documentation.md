@@ -39,4 +39,6 @@ R project with two pieces of code:
 - created geographical scatter plot using longitude and latitude 
 - the scatter plot displays meteorites by their mass in tons; color grouped by meteorites which were observed falling vs those that were found
 
+![](images/scatter_plot.png)
+
 - second graph is a histogram, displaying the number of meteorites fallen on Earth by year of discovery

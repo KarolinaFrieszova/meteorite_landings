@@ -6,6 +6,9 @@ output: html_notebook
 ```{r}
 library(tidyverse)
 library(viridis)
+library(here)
+
+meteorites <- read_csv(here("data/clean_data/meteorites.csv"))
 ```
 
 ```{r}
