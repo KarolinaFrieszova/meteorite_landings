@@ -10,7 +10,7 @@ library(here)
 
 meteorites <- read_csv(here("data/clean_data/meteorites.csv"))
 ```
-
+The scatter plot displays meteorites by their mass in tons; color-grouped by meteorites which were observed falling vs those that were found
 ```{r}
 meteorites %>% 
   mutate(mass_g = mass_g/1000000) %>% 
@@ -26,6 +26,7 @@ ggplot()+
   theme_classic()
 ```
 
+Same data as in graph above, just with few extra features to make clean graph look.
 ```{r}
 meteorites %>% 
   mutate(mass_g = mass_g/1000000) %>% 
@@ -43,6 +44,7 @@ ggplot()+
   #theme(legend.position = "none")
 ```
 
+A histogram displaying the number of meteorites fallen on Earth by year of discovery
 ```{r}
 ggplot(meteorites)+
   aes(x = year, fill = fall)+
@@ -53,4 +55,5 @@ ggplot(meteorites)+
        y = "Count\n",
        title = "Number of meteorites fallen on Earth by year of discovery\n")
 ```
+
 
